@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dibs</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-chip (click)="change_color()" color="{{color}}" class="square">
+	<ion-avatar>
+  		<img src="{{icon}}">
+  	</ion-avatar>
+  	<ion-label>Hello, World!</ion-label>
+</ion-chip>

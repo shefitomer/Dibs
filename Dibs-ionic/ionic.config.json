@@ -1,0 +1,7 @@
+{
+  "name": "Dibs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
