@@ -7,9 +7,32 @@
   </ion-toolbar>
 </ion-header>
 
+<div>
 <ion-chip (click)="change_color()" color="{{color}}" class="square">
-	<ion-avatar>
+	<ion-avatar class="profile-avatar">
   		<img src="{{icon}}">
   	</ion-avatar>
-  	<ion-label>Hello, World!</ion-label>
+  	<ion-label>
+      <ion-text color="dark">
+      Toilet
+      </ion-text>
+     <ion-avatar class="item-icon">
+      <img src="https://cdn2.iconfinder.com/data/icons/bathroom-items/128/Set7-11-512.png">
+     </ion-avatar> 
+    </ion-label>
 </ion-chip>
+
+<ion-chip (click)="change_color()" color="{{color}}" class="square">
+  <ion-avatar class="profile-avatar">
+      <img src="{{icon}}">
+    </ion-avatar>
+    <ion-label>
+      <ion-text color="dark">
+      Toilet
+      </ion-text>
+     <ion-avatar class="item-icon">
+      <img src="https://cdn2.iconfinder.com/data/icons/bathroom-items/128/Set7-11-512.png">
+     </ion-avatar> 
+    </ion-label>
+</ion-chip>
+</div>
