@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dib-item',
+  selector: 'dib-item',
   templateUrl: './dib-item.component.html',
   styleUrls: ['./dib-item.component.scss'],
 })

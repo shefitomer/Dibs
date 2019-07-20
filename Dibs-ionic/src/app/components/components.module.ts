@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DibItemComponent } from './dib-item/dib-item.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [DibItemComponent],
   imports: [
-    CommonModule
+    CommonModule,
+  ],
+  exports: [
+  	DibItemComponent
   ]
 })
 export class ComponentsModule { }
