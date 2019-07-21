@@ -10,9 +10,6 @@ import { DibItemComponent } from '../components/components.module';
 export class DibsPage {
 
 	constructor() {
-	  	this.http.get('/getItems').subscribe((data) => {
-	    	console.log(data);
-		});
         this.items = [
             { title: 'Notatka 1', description: 'Opis notatki 1' },
             { title: 'Notatka 1', description: 'Opis notatki 1' },
