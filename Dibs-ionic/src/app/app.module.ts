@@ -25,6 +25,3 @@ import { ComponentsModule } from './components/components.module';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
-export const COLOR_CLICKED = "primary"
-export const COLOR_NOT_CLICKED = "light"
