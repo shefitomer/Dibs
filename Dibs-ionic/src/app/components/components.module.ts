@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   exports: [
-  	DibItemComponent
+  	DibItemComponent,
   ]
 })
 export class ComponentsModule { }

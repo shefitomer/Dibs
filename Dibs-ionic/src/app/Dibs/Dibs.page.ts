@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DibItemComponent } from '../components/components.module';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-Dibs',
@@ -9,13 +9,12 @@ import { DibItemComponent } from '../components/components.module';
 
 export class DibsPage {
 
-	constructor() {
-        this.items = [
-            { title: 'Notatka 1', description: 'Opis notatki 1' },
-            { title: 'Notatka 1', description: 'Opis notatki 1' },
-            { title: 'Notatka 2', description: 'Opis notatki 2' },
-            { title: 'Notatka 3', description: 'Opis notatki 3' }
-        ];
+	private items;
+
+	constructor(private http: HttpClient) {
+		//this.http.get('/getUsers').subscribe((data) => {
+	    //	console.log(data);
+	    //});
         this.items = [
             { title: 'Notatka 1', description: 'Opis notatki 1' },
             { title: 'Notatka 1', description: 'Opis notatki 1' },
