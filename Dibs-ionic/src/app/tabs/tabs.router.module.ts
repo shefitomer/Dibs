@@ -43,7 +43,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/Home',
+    redirectTo: '/tabs/Dibs',
     pathMatch: 'full'
   }
 ];

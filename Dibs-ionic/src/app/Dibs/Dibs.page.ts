@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { COLOR_CLICKED, COLOR_NOT_CLICKED } from "../app.module";
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-Dibs',
@@ -9,26 +9,18 @@ import { COLOR_CLICKED, COLOR_NOT_CLICKED } from "../app.module";
 
 export class DibsPage {
 
-	public color = COLOR_NOT_CLICKED
-	private clicked = false;
-	public icon = "https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7740?d=identicon&f=y"
+	private items;
 
-	constructor() {}
-
-	change_color() {
-		if(this.clicked == false)
-		{
-			this.clicked = true
-			this.icon = "https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
-			this.color = COLOR_CLICKED
-			console.log(COLOR_CLICKED)
-		}
-		else{
-			this.clicked = false
-			this.icon = "https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7740?d=identicon&f=y"
-			this.color = COLOR_NOT_CLICKED
-			console.log(COLOR_NOT_CLICKED)
-		}
+	constructor(private http: HttpClient) {
+		//this.http.get('/getUsers').subscribe((data) => {
+	    //	console.log(data);
+	    //});
+        this.items = [
+            { title: 'Notatka 1', description: 'Opis notatki 1' },
+            { title: 'Notatka 1', description: 'Opis notatki 1' },
+            { title: 'Notatka 2', description: 'Opis notatki 2' },
+            { title: 'Notatka 3', description: 'Opis notatki 3' }
+        ];
 	}
-
+	
 }

@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { ComponentsModule } from './components/components.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -23,6 +25,3 @@ import { HttpClientModule } from '@angular/common/http';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
-export const COLOR_CLICKED = "primary"
-export const COLOR_NOT_CLICKED = "light"
