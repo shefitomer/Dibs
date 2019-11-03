@@ -3,16 +3,20 @@
     <ion-title>Dibs</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
-  </ion-toolbar>
+  </ion-buttons>
+</ion-toolbar>
 </ion-header>
 
 <ion-content>
-    
 	<ion-row>
-		<div *ngFor="let item of items">
-			<dib-item></dib-item>
-		</div>
-	</ion-row>
+        <div *ngIf="items == undefined">
+          <h1>loading...</h1>
+      </div>
+      <div *ngIf="items.length == 0">
+          <h1> No Items </h1>
+      </div>
+      <div *ngFor="let item of items">
+         <dib-item [title]=item.Name [description]=item.description></dib-item>
+     </div>
+   </ion-row>
 </ion-content>
-

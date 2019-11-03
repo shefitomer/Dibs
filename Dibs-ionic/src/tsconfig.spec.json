@@ -10,7 +10,8 @@
   "files": [
     "test.ts",
     "zone-flags.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    "src/app/login"
   ],
   "include": [
     "**/*.spec.ts",
